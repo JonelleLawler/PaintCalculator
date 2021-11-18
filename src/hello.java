@@ -27,9 +27,9 @@ public class hello
         for(int i = 0; i < numberOfWalls; i++)
         {
             System.out.print("What is the height of wall number " + (i + 1) + " in metres: ");
-            wallHeights[i] = scanner.nextFloat();
+            wallHeights[i] = Float.parseFloat(scanner.next()); // change to .next() which converts to string
             System.out.print("What is the width of wall number " + (i + 1) + " in metres: ");
-            wallWidths[i] = scanner.nextFloat();
+            wallWidths[i] = Float.parseFloat(scanner.next());
 
             // Add new variables to total
             totalWidth += wallWidths[i];
